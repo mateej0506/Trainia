@@ -26,8 +26,8 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-color: #121212; /* dark background */
-  color: #e0e0e0; /* light text */
+  background-color: #121212; 
+  color: #e0e0e0; 
 }
 
 #features {
@@ -49,9 +49,7 @@ body {
   text-align: right;
   margin-top: 20px;
  }
-/* =========================
-   HEADER
-========================= */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -81,7 +79,6 @@ header nav a:hover {
   color: #00bfff;
 }
 
-/* Hamburger for mobile */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -113,9 +110,6 @@ header nav a:hover {
   }
 }
 
-/* =========================
-   SECTIONS
-========================= */
 section {
   padding: 6rem 4rem;
 }
@@ -128,9 +122,6 @@ h2 {
   color: #fff;
 }
 
-/* =========================
-   FEATURES SECTION
-========================= */
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -158,16 +149,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Feature text overrides */
-
 #features p {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 25px;
 }
 
-/* =========================
-   ABOUT SECTION
-========================= */
 #about {
   display: flex;
   flex-wrap: wrap;
@@ -186,9 +172,6 @@ h2 {
   border-radius: 12px;
 }
 
-/* =========================
-   PLAN GENERATOR
-========================= */
 #plan-generator form {
   display: flex;
   flex-direction: column;
@@ -225,7 +208,6 @@ h2 {
   color: #fff;
 }
 
-/* Output box */
 #plan-output {
   margin-top: 2rem;
   max-width: 600px;
@@ -235,9 +217,6 @@ h2 {
   text-align: left;
 }
 
-/* =========================
-   TESTIMONIALS
-========================= */
 #testimonials {
   padding: 6rem 0;
   background-color: #121212;
@@ -273,11 +252,6 @@ h2 {
   100% { transform: translateX(-50%); }
 }
 
-
-
-/* =========================
-   CONTACT FORM
-========================= */
 #contact form {
   display: flex;
   flex-direction: column;
@@ -313,9 +287,6 @@ h2 {
   color: #fff;
 }
 
-/* =========================
-   FOOTER
-========================= */
 footer {
   text-align: center;
   padding: 2rem;
@@ -324,9 +295,7 @@ footer {
   font-weight: 500;
 }
 
-/* =========================
-   RESPONSIVE TWEAKS
-========================= */
+
 @media (max-width: 768px) {
   section {
     padding: 3rem 1.5rem;
