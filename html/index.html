@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Trainia</title>
+            <link rel="stylesheet" href="../css/style.css">
+            <script defer src="../js/script.js"></script>
+        </head>
+        <body>
+            <header>  
+                <h1>Trainia</h1>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> 
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#plan-generator">Create Your Plan</a></li>
+                        <li><a href="#about">What is Trainia?</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="home">
+                <p id="firsttext">ACHIEVE YOUR <span class="highlight">FITNESS GOALS</span> <br> 
+                    WITH <span class="highlight">PERSONALIZED WORKOUTS</span> <br>
+                     AND <span class="highlight">NUTRITION PLANS</span>.</p>
+            </section>
+            <section id="features">
+                <h2>Features</h2>
+                <p>
+                <b><span class="highlight">Personalized Workout Plan</span></b><br>
+                    Enter your available equipment, weekly training frequency, and goals, and receive a tailored workout plan.<br>
+                <b><span class="highlight">Automatic nutrition plan</span></b><br>
+                    Get a nutrition plan based on your goals and dietary preferences.<br>
+                <b><span class="highlight">User-Friendly Interface</span></b><br>
+                    Intuitive design for easy navigation and plan management.<br>
+                </p>
+            </section>
+
+            <section id="about">
+                <h2 id="whatistrainiaheader">What is Trainia?</h2>
+                <p id="whatistrainia">Trainia is your personal fitness coach,<br> designed to help you reach your goals efficiently and effectively.<br>
+                    Whether you want to build muscle, lose fat,<br> or simply maintain a healthy lifestyle,<br> 
+                    Trainia creates personalized workout and nutrition plans <br>tailored to your equipment, schedule, and preferences.<br>
+                    <br> </p>
+            </section>
+            <section id="plan-generator">
+                <h2>Create Your Plan</h2>
+                    <form id="user-form">
+                        <input type="text" id="username" placeholder="Your Name" required>
+                        <select id="goal" required>
+                            <option value="" disabled selected>Choose Your Goal</option>
+                            <option value="muscle">Build Muscle</option>
+                            <option value="fat">Lose Fat</option>
+                            <option value="fitness">General Fitness</option>
+                        </select>
+                        <input type="number" id="sessions" placeholder="Workouts per week" min="1" max="7" required>
+                        
+                        <select id="equipment" required >
+                        <option value="" disabled selected>Choose Available Equipment</option>
+                        <option value="dumbbells">Dumbbells</option>
+                        <option value="barbell">Barbell</option>
+                        <option value="kettlebell">Kettlebell</option>
+                        <option value="resistance_bands">Resistance Bands</option>
+                        <option value="pull_up_bar">Pull-up Bar</option>
+                        <option value="basic_home_gym">Basic home gym (barbell, dumbbells, bench press, squat rack)</option>
+                        <option value="fully_equipped_gym">Fully equipped gym</option>
+                        <option value="none">No Equipment</option>
+                        </select>
+
+                        <button type="submit">Generate Plan</button>
+                    </form>
+                    <div id="plan-output"></div>
+            </section>
+            <section id="testimonials">
+            <h2>What Users Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-track">
+                <div class="testimonial-card">"Trainia helped me get in shape!" - John D.</div>
+                <div class="testimonial-card">"These plans are amazing." - Sarah K.</div>
+                <div class="testimonial-card">"I love tracking my progress." - Mike L.</div>
+                <div class="testimonial-card">"Easy to follow workouts." - Emma R.</div>
+                <div class="testimonial-card">"Highly recommend for beginners." - Liam P.</div>
+                <div class="testimonial-card">"Custom plans saved me time." - Zoe M.</div>
+                <div class="testimonial-card">"I finally reached my goals." - Alex C.</div>
+                <div class="testimonial-card">"Great UX and clean design." - Mia T.</div>
+                <div class="testimonial-card">"Very motivating app." - Noah B.</div>
+                <div class="testimonial-card">"Works perfectly with my schedule." - Lily S.</div>
+                <div class="testimonial-card">"Fun and engaging." - Ethan W.</div>
+                <div class="testimonial-card">"Love the community feature." - Ava H.</div>
+                <div class="testimonial-card">"Adaptive workouts are genius." - Lucas F.</div>
+                <div class="testimonial-card">"Nutrition plan is spot on." - Chloe J.</div>
+                <div class="testimonial-card">"Highly recommended for everyone." - Jack N.</div>
+                </div>
+            </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Get in touch with us for more information.<br>
+                    <br>
+                Email: support@trainia.com 
+                </p>
+                <div class="contact-footer-text" style="margin-top:2rem; font-size:0.9rem; color:#aaa; line-height:1.4;">
+        By using Trainia, you agree to our <a href="#" style="color:#00bfff; text-decoration:underline;">Terms of Use</a> and <a href="#" style="color:#00bfff; text-decoration:underline;">Privacy Policy</a>.
+        <br>
+        All content provided is for informational purposes only. Trainia is not responsible for any injury, loss, or damages related to the use of workout or nutrition plans.
+        <br>
+         
+    </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2025 Trainia. All rights reserved.</p>
+            </footer>
+        </body>
+
+    </html>

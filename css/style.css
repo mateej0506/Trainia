@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#home {
+  background-color: #121212; 
+    background-image: url(../images/gymstock.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-blend-mode:soft-light;
+  
+}
+#firsttext {
+  font-size: 80px;
+  font-weight: bold;
+  font-style: italic;
+  text-align:left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 2rem auto;
+ }
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #121212; /* dark background */
+  color: #e0e0e0; /* light text */
+}
+
+#features {
+  font-size: 30px;
+  line-height: 2.0;
+  background: linear-gradient(to bottom, #121212 0%, #1f1f1f 80%, #121212 100%);
+  color: #e0e0e0;
+  padding: 6rem 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+ #whatistrainiaheader {
+  font-size: 70px !important;
+ }
+
+ #whatistrainia {
+  font-size: 25px !important;
+  text-align: right;
+  margin-top: 20px;
+ }
+/* =========================
+   HEADER
+========================= */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+header nav a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #00bfff;
+}
+
+/* Hamburger for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-right: auto;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 6rem 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.feature-card {
+  background-color: #1f1f1f;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: left;
+  color: #e0e0e0;
+}
+
+.highlight {
+  background-color: #00bfff; 
+  color: #121212; 
+  padding: 0.2rem 0.4rem;
+  border-radius: 7px; 
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Feature text overrides */
+
+#features p {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+#about p {
+  flex: 1 1 300px;
+  font-size: 1.1rem;
+}
+
+#about img {
+  flex: 1 1 300px;
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* =========================
+   PLAN GENERATOR
+========================= */
+#plan-generator form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+#plan-generator input,
+#plan-generator select,
+#plan-generator button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+#plan-generator button {
+  background-color: #00bfff;
+  color: #121212;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+#plan-generator button:hover {
+  background-color: #3399ff;
+  color: #fff;
+}
+
+/* Output box */
+#plan-output {
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* =========================
+   TESTIMONIALS
+========================= */
+#testimonials {
+  padding: 6rem 0;
+  background-color: #121212;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-track {
+  display: flex;
+  width: calc(15 * 300px);
+  animation: scroll 40s linear infinite;
+}
+
+.testimonial-card {
+  flex: 0 0 300px;
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+#contact input,
+#contact textarea,
+#contact button {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+#contact button {
+  background-color: #00bfff;
+  color: #121212;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #3399ff;
+  color: #fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  font-weight: 500;
+}
+
+/* =========================
+   RESPONSIVE TWEAKS
+========================= */
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .features-grid {
+    gap: 1.5rem;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  #plan-generator form {
+    max-width: 100%;
+  }
+
+  .testimonial-track {
+    width: calc(15 * 250px);
+  }
+
+  .testimonial-card {
+    flex: 0 0 250px;
+    font-size: 0.9rem;
+  }
+
+  .progress-container {
+    max-width: 100%;
+  }
+
+  .progress-bar {
+    height: 20px;
+  }
+}
+
