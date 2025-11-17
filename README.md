@@ -15,7 +15,7 @@ Trainia is a simple web-based **fitness plan generator** that creates personaliz
 
 ## How to Use
 
-1. Open `index.html` in a web browser.
+1. Open https://trainia.netlify.app/
 2. Enter your name, fitness goal, weekly workout frequency, and available equipment.
 3. Click **Generate Plan**.
 4. Review the workout, nutrition, and training tips.
