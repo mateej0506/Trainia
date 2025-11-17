@@ -103,7 +103,21 @@ form.addEventListener('submit', (e) => {
   tipsContent += '- Track your progress weekly\n';
   tipsContent += '- Sleep 7-9 hours per night\n';
 
-  output.innerHTML = `<pre>${workout}\n${nutrition}\n${tips}${tipsContent}</pre>`;
+  function wrapLongLines(str, maxLength = 60) {
+  return str.split('\n').map(line => {
+    if (line.length <= maxLength) return line;
+    let result = '';
+    while (line.length > maxLength) {
+      result += line.slice(0, maxLength) + '\n';
+      line = line.slice(maxLength);
+    }
+    return result + line;
+  }).join('\n');
+}
+
+const fullPlan = `${workout}\n${nutrition}\n${tips}${tipsContent}`;
+output.textContent = fullPlan;
+
 
   if (!document.querySelector('#save-btn')) {
     const saveBtn = document.createElement('button');
