@@ -101,7 +101,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    margin-left: 200px;
+    margin-left: auto;
   }
 
   header nav ul {
@@ -249,12 +249,12 @@ h2 {
 
 .testimonial-track {
   display: flex;
-  width: calc(15 * 300px);
+  width: 100%;
   animation: scroll 40s linear infinite;
 }
 
 .testimonial-card {
-  flex: 0 0 300px;
+  flex: 0 0 250px;
   margin: 0 1rem;
   padding: 2rem;
   background-color: #1f1f1f;
@@ -314,18 +314,20 @@ footer {
 
 
 @media (max-width: 768px) {
-
   #firsttext {
+    margin: 2rem 1rem;
     font-size: 40px;
     text-align: center;
   }
   #whatistrainiaheader {
     font-size: 35px !important;
+    margin: 0 1rem;
    }
   
    #whatistrainia {
     font-size: 18px !important;
     text-align: center;
+    margin: 0 1rem;
    }
   section {
     padding: 3rem 1.5rem;
