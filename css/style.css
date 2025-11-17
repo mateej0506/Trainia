@@ -99,15 +99,23 @@ header nav a:hover {
 }
 
 @media (max-width: 768px) {
-  .hamburger {
+ .hamburger {
     display: flex;
-    margin-left: auto;
+    margin-left: auto; 
+    cursor: pointer;
   }
 
   header nav ul {
     display: none;
     flex-direction: column;
     gap: 1rem;
+    position: absolute;
+    top: 100%; 
+    right: 0;  
+    background-color: #1f1f1f;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    z-index: 1000;
   }
 
   header nav ul.active {

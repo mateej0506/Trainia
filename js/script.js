@@ -1,6 +1,13 @@
 const form = document.querySelector('#user-form');
 const output = document.querySelector('#plan-output');
 
+const hamburger = document.querySelector(".hamburger");
+const navUL = document.querySelector("header nav ul");
+
+hamburger.addEventListener("click", () => {
+  navUL.classList.toggle("active");
+});
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 
