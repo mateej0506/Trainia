@@ -242,6 +242,7 @@ h2 {
   text-align: left;
   word-wrap: break-word;
   padding: 0 1rem;
+  white-space: pre-wrap;
 }
 
 #testimonials {
