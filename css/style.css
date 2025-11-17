@@ -235,11 +235,13 @@ h2 {
 
 #plan-output {
   margin-top: 2rem;
-  max-width: 600px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.1rem;
   text-align: left;
+  word-wrap: break-word
+  padding: 0 1rem;
 }
 
 #testimonials {
