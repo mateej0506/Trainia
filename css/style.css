@@ -7,6 +7,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+html, body {
+  overflow-x: hidden;
+}
 #home {
   background-color: #121212; 
     background-image: url(../images/gymstock.jpg);
@@ -97,6 +101,7 @@ header nav a:hover {
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    margin-left: 200px;
   }
 
   header nav ul {
@@ -110,6 +115,18 @@ header nav a:hover {
   }
 }
 
+@media (max-width: 480px) {
+  #plan-generator form,
+  #contact form {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+ #home {
+    background-position: center top;
+  }
+}
 section {
   padding: 6rem 4rem;
 }
@@ -297,6 +314,19 @@ footer {
 
 
 @media (max-width: 768px) {
+
+  #firsttext {
+    font-size: 40px;
+    text-align: center;
+  }
+  #whatistrainiaheader {
+    font-size: 35px !important;
+   }
+  
+   #whatistrainia {
+    font-size: 18px !important;
+    text-align: center;
+   }
   section {
     padding: 3rem 1.5rem;
   }
